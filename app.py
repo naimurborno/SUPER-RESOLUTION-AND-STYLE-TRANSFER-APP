@@ -21,7 +21,7 @@ with tabs1:
         style_image=style_image.astype(np.float32)[np.newaxis, ...]/255.
         content_image=content_image.astype(np.float32)[np.newaxis, ...]/255.
         style_image=tf.image.resize(style_image,(256,256))
-        with st.spinner("Please wait()"):    
+        with st.spinner("Please wait!"):    
             stylized_output=model(tf.constant(content_image),tf.constant(style_image))
         stylized_output=np.array(stylized_output[0])
         st.image(stylized_output)
