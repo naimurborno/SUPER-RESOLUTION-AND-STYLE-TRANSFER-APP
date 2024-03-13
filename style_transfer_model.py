@@ -1,3 +1,5 @@
+
+import pip
 import tensorflow as tf
 import tensorflow_hub
 
